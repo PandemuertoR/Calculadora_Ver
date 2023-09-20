@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:text="CALCULADORA" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/material_dynamic_neutral_variant20" />
+
+    <TextView
+        android:id="@+id/textPantalla"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:textSize="50sp"
+        android:background="@color/material_dynamic_neutral_variant10"
+        android:gravity="top|left"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/material_dynamic_neutral_variant10"
+        android:gravity="bottom|right"
+        android:textSize="50sp"
+        android:text="" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/material_dynamic_neutral_variant20"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <Button
+            android:id="@+id/buttonParenIzq"
+            android:textColor="@color/colorOperadoresTexto"
+            android:backgroundTint="@color/colorOperadores"
+            android:layout_gravity=""
+            android:layout_rowWeight="1"
+            android:textSize="45sp"
+            android:text="(" />
+
+        <Button
+            android:id="@+id/buttonParenDer"
+            android:textColor="@color/colorOperadoresTexto"
+            android:backgroundTint="@color/colorOperadores"
+            android:textSize="45sp"
+            android:layout_gravity="fill"
+            android:text=")" />
+        <Button
+            android:id="@+id/buttonDiv"
+            android:textColor="@color/colorOperadoresTexto"
+            android:backgroundTint="@color/colorOperadores"
+            android:layout_gravity="fill"
+            android:textSize="45sp"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/buttonDel"
+            android:textColor="@color/colorOperadoresTexto"
+            android:backgroundTint="@color/colorOperadores"
+            android:layout_gravity="fill"
+            android:textSize="30sp"
+            android:text="DEL" />
+
+        <Button
+            android:id="@+id/button7"
+            android:textColor="@color/colorNumerosTexto"
+            android:backgroundTint="@color/colorNumeros"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:textSize="45sp"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/button8"
+            android:textColor="@color/colorNumerosTexto"
+            android:backgroundTint="@color/colorNumeros"
+            android:layout_gravity="fill"
+            android:textSize="45sp"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/button9"
+            android:textColor="@color/colorNumerosTexto"
+            android:backgroundTint="@color/colorNumeros"
+            android:layout_gravity="fill"
+            android:textSize="45sp"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/buttonResta"
+            android:textColor="@color/colorOperadoresTexto"
+            android:backgroundTint="@color/colorOperadores"
+            android:layout_gravity="fill"
+            android:textSize="45sp"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/button4"
+            android:textColor="@color/colorNumerosTexto"
+            android:backgroundTint="@color/colorNumeros"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:textSize="45sp"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/button5"
+            android:textColor="@color/colorNumerosTexto"
+            android:backgroundTint="@color/colorNumeros"
+            android:layout_gravity="fill"
+            android:textSize="45sp"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/button6"
+            android:textColor="@color/colorNumerosTexto"
+            android:backgroundTint="@color/colorNumeros"
+            android:layout_gravity="fill"
+            android:textSize="45sp"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/buttonSuma"
+            android:textColor="@color/colorOperadoresTexto"
+            android:backgroundTint="@color/colorOperadores"
+            android:layout_gravity="fill"
+            android:textSize="45sp"
+            android:text="+" />
+        <Button
+            android:id="@+id/button1"
+            android:textColor="@color/colorNumerosTexto"
+            android:backgroundTint="@color/colorNumeros"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:textSize="45sp"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:textColor="@color/colorNumerosTexto"
+            android:backgroundTint="@color/colorNumeros"
+            android:layout_gravity="fill"
+            android:textSize="45sp"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:textColor="@color/colorNumerosTexto"
+            android:backgroundTint="@color/colorNumeros"
+            android:layout_gravity="fill"
+            android:textSize="45sp"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/buttonMulti"
+            android:textColor="@color/colorOperadoresTexto"
+            android:backgroundTint="@color/colorOperadores"
+            android:layout_gravity="fill"
+            android:textSize="45sp"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:textColor="@color/colorNumerosTexto"
+            android:backgroundTint="@color/colorNumeros"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:text="C"
+            android:textSize="45sp" />
+
+        <Button
+            android:id="@+id/button0"
+            android:textColor="@color/colorNumerosTexto"
+            android:backgroundTint="@color/colorNumeros"
+            android:layout_gravity="fill"
+            android:textSize="45sp"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/buttonPunt"
+            android:textColor="@color/colorNumerosTexto"
+            android:backgroundTint="@color/colorNumeros"
+            android:layout_gravity="fill"
+            android:textSize="45sp"
+            android:text="." />
+
+        <Button
+            android:id="@+id/buttonResultado"
+            android:textColor="@color/colorOperadoresTexto"
+            android:backgroundTint="@color/colorOperadores"
+            android:layout_gravity="fill"
+            android:textSize="45sp"
+            android:text="=" />
+
+    </GridLayout>
+</LinearLayout>
